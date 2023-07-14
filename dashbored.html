@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background-color: #b6b6b6;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      margin-right: 10px;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+    .notification-icon, .user-icon {
+      margin-left: 10px;
+    }
+    .sidebar {
+      background-color: rgb(84, 53, 255);
+      color: #fff;
+      padding: 20px;
+      height: 20vh;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .main {
+      padding: 20px;
+    }
+    .tile {
+      background-color: rgb(84, 53, 255); 
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .recent-articles {
+      color: rgb(84, 53, 255); 
+      margin-top: 20px;
+    }
+    .recent-articles-tab {
+      display: flex;
+      color: royalblue; 
+      justify-content: space-between;
+      align-items: center;
+    }
+    .view-all {
+      color: rgb(0, 183, 255);
+    }
+    .geeks-for-geeks {
+      color: rgb(0, 128, 0);
+      font-weight: bold;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="geeks-for-geeks">GeeksForGeeks</span>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search">
+      <span class="notification-icon">&#128276;</span>
+    </div>
+    <span class="user-icon">&#128100;</span>
+  </div>
+  <div class="sidebar">
+    <ul>
+      <li>Dashboard</li>
+      <li>Articles</li>
+      <li>Reports</li>
+      <li>Institutions</li>
+      <li>Profile</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="tile">Article Views: <span>60.5K</span></div>
+    <div class="tile">Likes: <span>150</span></div>
+    <div class="tile">Comments: <span>320</span></div>
+    <div class="tile">Articles Published: <span>70</span></div>
+    <div class="recent-articles">
+      <div class="recent-articles-tab">
+        <h2>Recent Articles</h2>
+        <a href="#" class="view-all">View All</a>
+      </div>
+      <ul>
+        <li>Article 1</li>
+        <li>Article 2</li>
+        <li>Article 3</li>
+        <li>Article 4</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
